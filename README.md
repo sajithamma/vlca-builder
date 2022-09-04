@@ -31,7 +31,7 @@ npm run dev
 ## Change / Add new models
 
 - Edit islands/at0_0.jsx file.
-- Refer react fiber for components usage and documentation 
+- Refer react fiber for components usage and documentation  https://github.com/pmndrs/react-three-fiber
 - See the live changes in http://localhost:3000.
 - Some cases you need to stop the server ( Ctrl+Z) and rerun the command "npm run dev"
 

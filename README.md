@@ -7,15 +7,18 @@
 
 You need to install:
 
-- Node / NPM
-- GIT
-- Any editor like VS-Code
+- Node / NPM https://nodejs.org/en/download/package-manager/
+- GIT https://git-scm.com/downloads
+- Any editor like VS-Code https://code.visualstudio.com/download
 
 ## Install Steps
 
-```bash
+```javascript
 git clone git@github.com:sajithamma/vlca-builder.git
 cd vlca-builder
+//checkout to a new branch with your name
+git checkout -b <yourname>
+//example:  git checkout -b john
 npm install
 ```
 ## Run 
@@ -35,9 +38,19 @@ npm run dev
 
 ### Commit the changes
 
-```bash
+```javascript
 git status
 git add 'filename'
 git commit -m "your message here"
-git push origin main
+git push origin <your-branch-name>
+//example:  git push origin john
+```
+
+## About Volcano
+
+Volcano Islands is a world where social media, entertainment, and gaming merge into an interconnected, interoperable virtual experience. We are aiming to bring a paradigm shift in how humans interact in the world of entertainment.
+https://vlca.no
+
+
+
 ```

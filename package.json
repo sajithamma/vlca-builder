@@ -19,9 +19,15 @@
   },
   "homepage": "https://github.com/sajithamma/vlca-builder#readme",
   "dependencies": {
+    "@react-three/cannon": "^6.4.0",
+    "@react-three/drei": "^9.25.3",
+    "@react-three/fiber": "^8.6.2",
+    "camera-controls": "^1.36.2",
     "next": "^12.2.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.144.0",
+    "three-tween": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^8.23.0",

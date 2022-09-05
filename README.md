@@ -46,6 +46,54 @@ git push origin <your-branch-name>
 //example:  git push origin john
 ```
 
+## Some Examples of React Three Fiber
+###  Cube / Box
+```javascript
+ <mesh >
+        <boxBufferGeometry attach="geometry" args={[10, 10, 10]} />
+        <meshStandardMaterial attach="material" color="blue" />
+</mesh>
+```
+
+###  Load a GLTF Model
+```javascript
+const gltf = useGLTF('/assets/gltf/boat/scene.gltf');
+<group ref={boatRef} scale={4} position={[-100, 19, -50]}>
+    <Suspense fallback={<Loading />}>
+        <primitive object={gltf.scene} dispose={null} />
+    </Suspense>
+ </group>
+```
+
+###  Cone
+```javascript
+  <mesh position={[0, 2, 0]} castShadow>
+        <coneBufferGeometry args={[2, 8, 8]} />
+        <meshStandardMaterial color="red" metalness={0.7} roughness={0.1} />
+    </mesh>
+```
+
+###  Circle
+```javascript
+ <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 1, 0]}>
+    <circleBufferGeometry attach="geometry" args={[100, 64]} />
+    <meshBasicMaterial attach="material" map={texture} side={THREE.DoubleSide} />
+</mesh>
+```
+
+###  Positional/ Directional Audio
+```javascript
+    const sound = useRef();
+    const [listener] = useState(() => new THREE.AudioListener());
+    const [buffer] = useState(() => useLoader(THREE.AudioLoader, url));
+    <positionalAudio ref={sound} args={[listener]}  ></positionalAudio>
+```
+
+## Also Refer
+
+- @react-three/drei https://www.npmjs.com/package/@react-three/drei
+
+
 ## About Volcano
 
 Volcano Islands is a world where social media, entertainment, and gaming merge into an interconnected, interoperable virtual experience. We are aiming to bring a paradigm shift in how humans interact in the world of entertainment.

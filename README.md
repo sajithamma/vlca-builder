@@ -1,5 +1,5 @@
-# Volcano Builder
-## React Fiber based builder for vlca.no
+# Volcano Metaverse Builder
+## React Fiber based builder for vlca.no (decentralised storage)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 

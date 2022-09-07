@@ -3,6 +3,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+## Screenshot
+
+![alt Screenshot](/screenshot.png)
+
+
 ## Prerequisites
 
 You need to install:
